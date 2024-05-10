@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LAWAL TUNDE RESPONSIVE CONTAINER</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .container-flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: blue; /* Default background color */
+  }
+  .container-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    background-color: blue; /* Default background color */
+  }
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  @media (max-width: 600px) {
+    .container-flex,
+    .container-grid {
+      background-color: red; /* Change background color below 600px */
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container-flex">
+  <div class="card">
+    <img src="image1.jpg" alt="Image 1">
+    <h2>Title 1</h2>
+    <p>Short description 1</p>
+  </div>
+  <div class="card">
+    <img src="image2.jpg" alt="Image 2">
+    <h2>Title 2</h2>
+    <p>Short description 2</p>
+  </div>
+  <div class="card">
+    <img src="image3.jpg" alt="Image 3">
+    <h2>Title 3</h2>
+    <p>Short description 3</p>
+  </div>
+</div> <br>
+
+<div class="container-grid">
+  <div class="card">
+    <img src="image1.jpg" alt="Image 1">
+    <h2>Title 1</h2>
+    <p>Short description 1</p>
+  </div>
+  <div class="card">
+    <img src="image2.jpg" alt="Image 2">
+    <h2>Title 2</h2>
+    <p>Short description 2</p>
+  </div>
+  <div class="card">
+    <img src="image3.jpg" alt="Image 3">
+    <h2>Title 3</h2>
+    <p>Short description 3</p>
+  </div>
+</div>
+
+</body>
+</html>
